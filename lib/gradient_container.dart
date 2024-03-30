@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_test/styled_text.dart';
+import 'package:flutter_application_test/draw_card.dart';
+
 
 
 class GradientContainer extends StatelessWidget{
@@ -8,6 +9,7 @@ class GradientContainer extends StatelessWidget{
     //Initialization and Comment
   }
    final List<Color> colors;
+   
   @override
   Widget build(context){
     return Container(
@@ -19,9 +21,9 @@ class GradientContainer extends StatelessWidget{
             )
         ),
         child: const Center(
-          child: StyledText("Hi"),
-        ),
-      );
-    
+          child: DrawCard(),
+        
+        ), 
+    );
   }
 }
